@@ -1,0 +1,66 @@
+.contact {
+  position: relative;
+  z-index: 1;
+  margin-top: 70px;
+}
+
+.contact-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  align-items: flex-start;
+  width: 70%;
+  height: 550px;
+  padding-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.email-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 22px;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.email-header:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 96%;
+}
+
+textarea {
+  width: 93%;
+  height: 320px;
+  margin-left: 20px;
+  resize: vertical;
+  font-size: 1rem;
+  border: none;
+  resize: none;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button[type='submit'] {
+  background-color: #F7F3E3;
+  border-style: none;
+  border-radius: 6px;
+  height: 45px;
+  font-size: 1.5rem;
+  color: black;
+  background-color: transparent;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}

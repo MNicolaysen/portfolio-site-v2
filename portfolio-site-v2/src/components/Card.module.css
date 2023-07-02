@@ -1,0 +1,66 @@
+.card {
+  margin-top: 120px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.details {
+  transform: rotateX(180deg);
+  position: absolute;
+  bottom: 30px;
+}
+
+.details p {
+  margin: 20px 20px 40px 0;
+}
+
+.card-text {
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+
+.card h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 6px 6px 40px 6px;
+}
+
+.card h4 {
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.button-group {
+  position: absolute;
+  right: 0;
+  bottom: -90px;
+  margin: 0 10px 10px 0;
+  color: white;
+}
+
+.card-button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.video-container .project-video {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 55%;
+  border: 1px solid black;
+}
