@@ -10,7 +10,7 @@ function Landing() {
   const [showContact, setShowContact] = useState(false);
 
   function handleAboutClick() {
-    setShowAbout(true && !showAbout);
+    setShowAbout(!showAbout);
   }
 
   function handleContactClick() {
@@ -27,6 +27,7 @@ function Landing() {
           autoPlay
           muted
           loop
+          controls
         >
           <source src={landingBackground} type="video/mp4" />
         </video>
