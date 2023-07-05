@@ -4,11 +4,15 @@
 }
 
 .about-overlay {
-  display: flex;
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100%;
+  align-items: center; */
+  height: 100vh;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .about {
