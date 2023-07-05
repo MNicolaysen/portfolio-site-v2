@@ -27,6 +27,7 @@ function Landing() {
           autoPlay
           muted
           loop
+          playsInline
         >
           <source src={landingBackground} type="video/mp4" />
         </video>

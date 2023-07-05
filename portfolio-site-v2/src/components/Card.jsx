@@ -77,6 +77,7 @@ function Card({
                 autoPlay
                 loop
                 muted
+                playsInline
               >
                 <source src={videoSrc} type="video/mp4" />
               </video>
