@@ -1,5 +1,5 @@
 import landingBackground from '../components/images/landing-background.mp4';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import About from '../components/About';
 import Contact from '../components/Contact'
@@ -17,12 +17,21 @@ function Landing() {
     setShowContact(!showContact)
   }
 
+  useEffect(() => {
+    const video = document.getElementById('landing-video');
+    video.play().catch(error => {
+      // Autoplay was prevented, handle the error here
+      console.error('Autoplay was prevented:', error);
+    });
+  }, []);
+
   return (
 
     <div>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
       <div className='landing-container'>
         <video
+          id='landing-video'
           className="landing-video"
           autoPlay
           muted
@@ -61,14 +70,17 @@ function Landing() {
               {
                 color: 'white',
                 textDecoration: 'none',
-                fontSize: '11px',
+                fontSize: '12px',
                 backgroundColor:'black',
-                padding:'6px',
-                borderRadius:'6px',
-                textAlign:'center',
+                borderRadius:'4px',
+                display:'flex',
+                justifyContent:'center',
+                alignItems:'center',
+                height:'30px',
+                width:'31px'
               }
             } href="./src/components/CV_compressed.pdf" download>
-              <i className="cv">CV</i>
+              <p className="cv">CV</p>
             </a>
           </li>
         </ul>
