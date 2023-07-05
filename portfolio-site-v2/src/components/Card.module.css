@@ -1,6 +1,6 @@
 .card {
   margin-top: 50px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .card img {
