@@ -13,6 +13,7 @@ function Card({
   linkTwo,
   videoSrc,
 }) {
+
   const [flipped, setFlipped] = useState(false);
 
   const props3 = useSpring({
@@ -26,6 +27,12 @@ function Card({
     color: "black",
     config: { mass: 1, tension: 70, friction: 30 },
   });
+
+
+  if (window.matchMedia("(max-width: 999px)").matches) {
+    props3.width = "300px";
+    props3.height = flipped ? '90%' : '170px'
+  }
 
   const handleCardClick = () => {
     setFlipped(!flipped);
