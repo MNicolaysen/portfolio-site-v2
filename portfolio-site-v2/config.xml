@@ -1,5 +1,5 @@
 <platform name=”ios”>
 
-<splash height=”2436" src=”res/icon/ios/launchimage-1242@3x~iphone6s-portrait_1242x2208.png” width=”1125" />
+<splash height="2436" src="res/icon/ios/launchimage-1242@3x~iphone6s-portrait_1242x2208.png" width="1125" />
 
-<splash height=”1125" src=”res/icon/ios/launchimage-1242@3x~iphone6s-landscape_2208x1242.png” width=”2436" /> </platform>
+<splash height="1125" src="res/icon/ios/launchimage-1242@3x~iphone6s-landscape_2208x1242.png" width="2436" /> </platform>
