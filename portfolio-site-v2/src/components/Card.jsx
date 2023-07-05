@@ -21,7 +21,7 @@ function Card({
     transform: `rotateX(${flipped ? 180 : 0}deg)`,
     backgroundColor: "white",
     border: "1px solid black",
-    height: flipped ? "550px" : "340px",
+    height: flipped ? "500px" : "345px",
     width: flipped ? "1000px" : "600px",
     top: flipped ? "20%" : "40%",
     color: "black",

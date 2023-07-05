@@ -25,8 +25,8 @@ export default function Carrousel(props) {
 
   const containerStyles = {
     width: "100vw",
-    height: "100%",
-    overflow: "auto",
+    height: "80vh",
+    overflow: "hidden",
     position: "relative",
   };
 

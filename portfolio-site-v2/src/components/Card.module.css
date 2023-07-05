@@ -1,11 +1,10 @@
 .card {
   margin-top: 50px;
-  /* overflow: auto; */
 }
 
 .card img {
   width: 100%;
-  object-fit: cover;
+  object-fit: fill !important;
 }
 
 .details {
@@ -64,11 +63,8 @@
 }
 
 @media (min-width: 1000px) {
-  .card {
-    overflow: hidden;
-  }
-
   .card h3 {
+    margin-top: 30px !important;
     font-size: 2.5rem;
     margin: 6px 6px 40px 6px;
   }
@@ -88,12 +84,20 @@
     width: 40%;
   }
 
+  .card img {
+    height: 345px;
+  }
+
+  .button-group {
+    bottom: -60px;
+  }
+
   .details {
-    overflow: none;
+    overflow: visible;
   }
 
   .video-container .project-video {
-    margin: 20px 0 0 20px;
+    margin: 0 0 0 20px;
     width: 55%;
   }
 }
