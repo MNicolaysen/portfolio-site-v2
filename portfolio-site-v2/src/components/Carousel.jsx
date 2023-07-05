@@ -1,6 +1,7 @@
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
+import { useSwipeable } from "react-swipeable";
 
 export default function Carrousel(props) {
   const table = props.cards.map((element, index) => {
@@ -17,8 +18,14 @@ export default function Carrousel(props) {
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
 
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setGoToSlide((prevSlide) => prevSlide + 1),
+    onSwipedRight: () => setGoToSlide((prevSlide) => prevSlide - 1),
+  });
+
   return (
     <div
+      {...handlers}
       style={{ width: props.width, height: props.height, margin: props.margin }}
     >
       <Carousel
