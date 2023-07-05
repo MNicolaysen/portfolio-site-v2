@@ -1,13 +1,12 @@
 import Carousel from './Carousel'
 
-export default function CarouselWrapper({ cards, height, width, offset, showArrows }) {
+export default function CarouselWrapper({ cards, height offset, showArrows }) {
 
   return (
     <div style={{ height }}>
       <Carousel
         cards={cards}
         height={height}
-        width={width}
         offset={offset}
         showArrows={showArrows}
       />
