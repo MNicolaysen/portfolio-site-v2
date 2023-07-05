@@ -23,10 +23,17 @@ export default function Carrousel(props) {
     onSwipedRight: () => setGoToSlide((prevSlide) => prevSlide - 1),
   });
 
+  const containerStyles = {
+    width: "100vw",
+    height: "100vh",
+    overflow: "hidden",
+    position: "relative",
+  };
+
   return (
     <div
       {...handlers}
-      style={{ width: props.width, height: props.height, margin: props.margin }}
+      style={containerStyles}
     >
       <Carousel
         slides={cards}
