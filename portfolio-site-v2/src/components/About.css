@@ -5,12 +5,9 @@
 
 .about-overlay {
   position: absolute;
-  top: 110px;
+  top: 130px;
   left: 30px;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  height: 100vh;
+  height: 80vh;
   overflow-x: hidden;
   width: 100%;
 }
@@ -68,16 +65,16 @@
   justify-content: center;
 }
 
-/* .close-btn {
-  font-size: 20px;
-  padding: 6px 20px;
-  margin-bottom: 20px;
-} */
-
 .close-btn {
   position: absolute;
   top: 100px;
   left: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  border: none;
+  font-style: none;
+  background-color: transparent;
 }
 
 @media (min-width: 1000px) {

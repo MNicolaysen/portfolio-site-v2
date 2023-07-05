@@ -105,7 +105,6 @@ function About() {
                   </TabPanel>
                 ))}
               </Tabs>
-              {/* <button className='close-btn' onClick={handleCloseWindow}>Close</button> */}
             </div>
           </div>
         </div>
