@@ -53,7 +53,7 @@
 }
 
 .react-tabs__tab {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   color: white;
   background-color: black;
   width: 100%;
@@ -64,10 +64,16 @@
   justify-content: center;
 }
 
-.close-btn {
+/* .close-btn {
   font-size: 20px;
   padding: 6px 20px;
   margin-bottom: 20px;
+} */
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 
 @media (min-width: 1000px) {

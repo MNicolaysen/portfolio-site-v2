@@ -87,6 +87,7 @@ function About() {
     <>
       {windowOpen && (
         <div id='about-container' className='about-container'>
+          <button className='close-btn' onClick={handleCloseWindow}>X</button>
           <div className='about-overlay'>
             <div className='about-content'>
               <Tabs defaultIndex={0}>
@@ -104,7 +105,7 @@ function About() {
                   </TabPanel>
                 ))}
               </Tabs>
-              <button className='close-btn' onClick={handleCloseWindow}>Close</button>
+              {/* <button className='close-btn' onClick={handleCloseWindow}>Close</button> */}
             </div>
           </div>
         </div>
