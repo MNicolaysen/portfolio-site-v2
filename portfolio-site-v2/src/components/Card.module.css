@@ -1,5 +1,5 @@
 .card {
-  margin-top: 30px;
+  margin-top: 50px;
   overflow: auto;
 }
 
@@ -11,7 +11,7 @@
 .details {
   transform: rotateX(180deg);
   position: absolute;
-  bottom: 30px;
+  bottom: 0;
   overflow: scroll;
 }
 
@@ -24,7 +24,7 @@
 .card h3 {
   font-size: 1.875rem;
   text-align: center;
-  margin: 6px 6px 20px 6px;
+  margin: 20px 6px 20px 6px;
 }
 
 .card h4 {
@@ -45,7 +45,7 @@
 .button-group {
   position: absolute;
   right: 0;
-  bottom: -90px;
+  bottom: -30px;
   margin: 0 10px 10px 0;
   color: white;
 }
