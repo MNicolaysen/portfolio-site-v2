@@ -10,10 +10,15 @@
   height: 100vh;
 }
 
+.about {
+  max-width: 100%;
+}
+
 .about-content {
   text-align: center;
   width: 85%;
-  height: 80%;
+  max-width: 85%;
+  max-height: 80%;
   background-color: black;
   position: relative;
   overflow-y: scroll;
@@ -24,7 +29,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .sheet {
@@ -33,7 +37,7 @@
 
 .sheet-text {
   color: white;
-  font-size: 12px;
+  font-size: 0.875rem;
   line-height: 18px;
   margin: 0;
 }
@@ -78,5 +82,10 @@
 
   .about-content {
     width: 70%;
+    height: 80%;
+  }
+
+  .about-content .sheet {
+    height: 100%;
   }
 }
