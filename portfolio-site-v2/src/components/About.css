@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .about {
@@ -47,6 +48,7 @@
   top: 0;
   display: flex;
   justify-content: space-evenly;
+  overflow-x: hidden;
 }
 
 .react-tabs__tab {
