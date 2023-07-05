@@ -30,7 +30,7 @@ function Card({
 
 
   if (window.matchMedia("(max-width: 999px)").matches) {
-    props3.width = "300px";
+    props3.width = "340px";
     props3.height = flipped ? '90%' : '170px'
   }
 
