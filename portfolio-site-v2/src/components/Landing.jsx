@@ -22,14 +22,6 @@ function Landing() {
     <div>
       <div className='landing-container'>
         <video
-          style={{
-            width: '100%',
-            maxHeight: '100%',
-            objectFit: 'fill',
-            opacity: '0.2',
-            position: 'absolute',
-            top: '0',
-          }}
           className="landing-video"
           autoPlay
           muted

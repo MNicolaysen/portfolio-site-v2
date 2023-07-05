@@ -12,7 +12,7 @@
 
 .about-content {
   text-align: center;
-  width: 70%;
+  width: 85%;
   height: 80%;
   background-color: black;
   position: relative;
@@ -28,13 +28,14 @@
 }
 
 .sheet {
-  margin: 30px 40px 30px 40px;
+  margin: 20px 15px 20px 15px;
 }
 
 .sheet-text {
   color: white;
-  font-size: 20px;
-  margin: 0 0 10px 0;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
 }
 
 .react-tabs__tab-list {
@@ -45,7 +46,7 @@
 }
 
 .react-tabs__tab {
-  font-size: 40px;
+  font-size: 15px;
   color: white;
   background-color: black;
   width: 100%;
@@ -58,4 +59,24 @@
   font-size: 20px;
   padding: 6px 20px;
   margin-bottom: 20px;
+}
+
+@media (min-width: 1000px) {
+  .react-tabs__tab {
+    font-size: 40px;
+  }
+
+  .sheet {
+    margin: 30px 40px 30px 40px;
+  }
+
+  .sheet-text {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    line-height: 30px;
+  }
+
+  .about-content {
+    width: 70%;
+  }
 }
