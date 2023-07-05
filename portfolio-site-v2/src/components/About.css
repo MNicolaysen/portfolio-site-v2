@@ -23,6 +23,7 @@
   background-color: black;
   position: relative;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .about-content .sheet {
@@ -34,7 +35,6 @@
 
 .sheet {
   margin: 20px 15px 20px 15px;
-  overflow-x: hidden;
 }
 
 .sheet-text {
