@@ -74,13 +74,13 @@ function Landing() {
         <ul className='navigation'>
           <li className='nav-link'>
             <a className={'about-btn'} onClick={handleAboutClick}>
-              About
+              A B O U T
             </a>
           </li>
           <li className='nav-link'>
-            <Link style={{textDecoration:'none', color:'black'}} to='/projects'>Projects</Link>
+            <Link style={{textDecoration:'none', color:'black'}} to='/projects'>P R O J E C T S</Link>
           </li>
-          <li className='nav-link' onClick={handleContactClick}>Contact</li>
+          <li className='nav-link' onClick={handleContactClick}>C O N T A C T</li>
         </ul>
 
         <a className='portfolio-v1' href="https://legendary-crostata-9441e6.netlify.app">V1</a>
