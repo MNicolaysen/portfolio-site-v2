@@ -6,7 +6,7 @@ import 'react-tabs/style/react-tabs.css';
 function About() {
   const aboutContent = [
     {
-      title: 'A little bit about me',
+      title: 'A Little About Me',
       text: (
         <div className='sheet'>
           <p className='sheet-text'>
@@ -27,7 +27,7 @@ function About() {
       ),
     },
     {
-      title: 'A lot about me',
+      title: 'A Lot About Me',
       text: (
         <div className='sheet'>
           <p className='sheet-text'>

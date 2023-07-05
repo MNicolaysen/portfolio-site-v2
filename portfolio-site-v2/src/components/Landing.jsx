@@ -20,7 +20,6 @@ function Landing() {
   useEffect(() => {
     const video = document.getElementById('landing-video');
     video.play().catch(error => {
-      // Autoplay was prevented, handle the error here
       console.error('Autoplay was prevented:', error);
     });
   }, []);
@@ -28,7 +27,7 @@ function Landing() {
   return (
 
     <div>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"></meta>
+      <meta name="theme-color" content="transparent"/>
       <div className='landing-container'>
         <video
           id='landing-video'
@@ -88,7 +87,7 @@ function Landing() {
         <ul className='navigation'>
           <li className='nav-link'>
             <a className={'about-btn'} onClick={handleAboutClick}>
-              A B O U T
+              A B O U T - M E
             </a>
           </li>
           <li className='nav-link'>
