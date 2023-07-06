@@ -5,6 +5,7 @@
 .card img {
   width: 100%;
   object-fit: fill !important;
+  height: 200px;
 }
 
 .unflipped-title {
