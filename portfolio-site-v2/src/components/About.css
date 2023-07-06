@@ -4,10 +4,9 @@
 }
 
 .about-overlay {
-  position: absolute;
-  top: 140px;
-  left: 30px;
-  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow-x: hidden;
   width: 100%;
 }
@@ -66,6 +65,11 @@
 }
 
 @media (min-width: 1000px) {
+  .about-overlay {
+    margin-top: 35px;
+    height: 90vh;
+  }
+
   .react-tabs__tab {
     font-size: 40px;
     height: 100%;
