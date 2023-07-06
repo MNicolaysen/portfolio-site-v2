@@ -112,7 +112,7 @@ function Projects() {
           alt="PlantSwap"
           framework="Ruby on Rails"
           dateCreated='June 2022'
-          description="This was the final project that me and my team created in Le Wagon. We wanted to create a platform for people to swap and donate their plants. A couple of features included were a live chat and the use of map API."
+          description="This was the final project that me and my team created in Le Wagon. We created a platform for people to swap and donate their plants. A couple of features included were a live chat and the use of map API."
           linkOne=""
           linkTwo='https://github.com/MNicolaysen/plant-swap'
           linkThree='https://www.youtube.com/watch?v=yB-CzDoPWR0'
