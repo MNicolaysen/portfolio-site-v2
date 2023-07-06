@@ -56,7 +56,7 @@ function Projects() {
       key: uuidv4(),
       content: (
         <Card
-          title="Restaurant Ordering App"
+          title="Restaurant App"
           imageSrc={restaurantApp}
           alt="Restaurant"
           framework="JavaScript"
@@ -112,7 +112,7 @@ function Projects() {
           alt="PlantSwap"
           framework="Ruby on Rails"
           dateCreated='June 2022'
-          description="This was the final project for my Le Wagon course that I created within a team of 4 people. We wanted to create a platform for people to swap and donate their plants, plant clippings, or plant babies. A couple of features included were a live chat function and the use of map API for current location and location of swapper."
+          description="This was the final project for my Le Wagon course that I created within a team of 4 people. We wanted to create a platform for people to swap and donate their plants. A couple of features included were a live chat and the use of map API."
           linkOne=""
           linkTwo='https://github.com/MNicolaysen/plant-swap'
           linkThree='https://www.youtube.com/watch?v=yB-CzDoPWR0'
