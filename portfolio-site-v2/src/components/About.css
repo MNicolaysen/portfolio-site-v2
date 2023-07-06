@@ -9,6 +9,7 @@
   justify-content: center;
   overflow-x: hidden;
   width: 100%;
+  height: 450px;
 }
 
 .about {
@@ -66,8 +67,7 @@
 
 @media (min-width: 1000px) {
   .about-overlay {
-    margin-top: 35px;
-    height: 90vh;
+    height: 650px;
   }
 
   .react-tabs__tab {

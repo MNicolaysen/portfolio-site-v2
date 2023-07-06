@@ -18,6 +18,7 @@ html, body {
 
 @media (min-width: 1000px) {
   .close-btn {
-    left: 15%;
+    margin-left: 200px;
+    margin-top: 10px;
   }
 }
