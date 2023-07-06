@@ -12,7 +12,7 @@ import memeGeneratorVideo from '../components/images/projects/meme-generator-vid
 import restaurantAppVideo from '../components/images/projects/restaurant-vid.mp4'
 import passwordGeneratorVideo from '../components/images/projects/password-generator-vid.mp4'
 import unitConverterVideo from '../components/images/projects/unit-converter-vid.mp4'
-// import plantSwapVideo from '../components/images/projects/le-wagon-demo-day.mp4'
+import plantSwapVideo from '../components/images/projects/le-wagon-demo-day.mp4'
 import { Link } from 'react-router-dom';
 
 
@@ -116,7 +116,7 @@ function Projects() {
           linkOne=""
           linkTwo='https://github.com/MNicolaysen/plant-swap'
           linkThree='https://www.youtube.com/watch?v=yB-CzDoPWR0'
-          // videoSrc={plantSwapVideo}
+          videoSrc={plantSwapVideo}
         />
       )
     }
