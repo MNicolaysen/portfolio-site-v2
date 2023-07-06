@@ -30,6 +30,7 @@ function Projects() {
           description='This is a project that I completed in my course with Scrimba. Through the module, I put into practice the use of useState, useEffect, props, and APIs.'
           linkOne='https://sparkly-alpaca-2bb10d.netlify.app'
           linkTwo=''
+          linkThree=''
           videoSrc={memeGeneratorVideo}
         />
       )
@@ -46,6 +47,7 @@ function Projects() {
           description="The purpose of this app was for me to put into practice the use of props in React. It's a simple travel journal for my recent trip to Malaysia and Indonesia."
           linkOne="https://verdant-tapioca-d5a576.netlify.app"
           linkTwo='https://github.com/MNicolaysen/scrimba-travel-journal'
+          linkThree=''
           videoSrc={travelJournalVideo}
         />
       )
@@ -62,6 +64,7 @@ function Projects() {
           description="I created this app with vanilla JavaScript. It's a restaurant ordering app that allows you to add items into your cart, remove them from the cart, and proceed to checkout."
           linkOne="https://monumental-platypus-9e161c.netlify.app"
           linkTwo='https://github.com/MNicolaysen/mobile-restaurant-menu'
+          linkThree=''
           videoSrc={restaurantAppVideo}
         />
       )
@@ -78,6 +81,7 @@ function Projects() {
           description="This is an early app I made with my course with Scrimba. It generates a random password for you each time the button is clicked."
           linkOne="https://gilded-tapioca-d75ef6.netlify.app"
           linkTwo='https://github.com/MNicolaysen/password-generator'
+          linkThree=''
           videoSrc={passwordGeneratorVideo}
         />
       )
@@ -94,6 +98,7 @@ function Projects() {
           description="This is one of the first apps I created using JavaScript. It will convert any number you put in the input field into either, Meters/Feet, Litres/Gallons, Kilos/Pounds."
           linkOne="https://lovely-speculoos-f313a9.netlify.app"
           linkTwo='https://github.com/MNicolaysen/scrimba-unit-converter'
+          linkThree=''
           videoSrc={unitConverterVideo}
         />
       )
@@ -110,6 +115,7 @@ function Projects() {
           description="This was the final project for my Le Wagon course that I created within a team of 4 people. We wanted to create a platform for people to swap and donate their plants, plant clippings, or plant babies. A couple of features included were a live chat function and the use of map API for current location and location of swapper."
           linkOne=""
           linkTwo='https://github.com/MNicolaysen/plant-swap'
+          linkThree='https://www.youtube.com/watch?v=yB-CzDoPWR0'
           videoSrc={plantSwapVideo}
         />
       )

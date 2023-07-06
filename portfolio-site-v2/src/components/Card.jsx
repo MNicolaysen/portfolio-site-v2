@@ -11,6 +11,7 @@ function Card({
   alt,
   linkOne,
   linkTwo,
+  linkThree,
   videoSrc,
 }) {
 
@@ -45,6 +46,10 @@ function Card({
   const handleButton2Click = () => {
     window.open(linkTwo, "_blank");
   };
+
+  const handleButton3Click = () => {
+    window.open(linkThree, "_blank");
+  }
 
   return (
     <animated.div
@@ -86,6 +91,14 @@ function Card({
                     onClick={handleButton2Click}
                   >
                     <i className="fa-brands fa-github"></i>
+                  </button>
+                )}
+                {linkThree && (
+                  <button
+                    className={Styles["card-button"]}
+                    onClick={handleButton3Click}
+                  >
+                    <i className="fa-brands fa-youtube"></i>
                   </button>
                 )}
               </div>
