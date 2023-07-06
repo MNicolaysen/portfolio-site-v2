@@ -120,5 +120,6 @@
   .video-container .project-video {
     margin: 0 0 0 20px;
     width: 55%;
+    max-height: 80px;
   }
 }
