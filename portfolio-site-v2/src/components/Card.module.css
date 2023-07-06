@@ -58,6 +58,8 @@
   background-color: transparent;
   font-size: 1.4rem;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 .video-container .project-video {
