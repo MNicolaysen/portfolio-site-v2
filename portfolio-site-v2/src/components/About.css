@@ -77,7 +77,8 @@
   }
 
   .sheet {
-    margin: 30px 40px 30px 40px;
+    margin: 40px;
+    text-align: start;
   }
 
   .sheet-text {

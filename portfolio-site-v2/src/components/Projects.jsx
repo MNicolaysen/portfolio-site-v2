@@ -12,6 +12,7 @@ import memeGeneratorVideo from '../components/images/projects/meme-generator-vid
 import restaurantAppVideo from '../components/images/projects/restaurant-vid.mp4'
 import passwordGeneratorVideo from '../components/images/projects/password-generator-vid.mp4'
 import unitConverterVideo from '../components/images/projects/unit-converter-vid.mp4'
+import plantSwapVideo from '../components/images/projects/le-wagon-demo-day.mp4'
 import { Link } from 'react-router-dom';
 
 
@@ -109,6 +110,7 @@ function Projects() {
           description="This was the final project for my Le Wagon course that I created within a team of 4 people. We wanted to create a platform for people to swap and donate their plants, plant clippings, or plant babies. A couple of features included were a live chat function and the use of map API for current location and location of swapper."
           linkOne=""
           linkTwo='https://github.com/MNicolaysen/plant-swap'
+          videoSrc={plantSwapVideo}
         />
       )
     }

@@ -5,12 +5,12 @@ import { useSwipeable } from "react-swipeable";
 
 export default function Carrousel(props) {
   const table = props.cards.map((element, index) => {
-    return { ...element, onClick: () => setGoToSlide(index) };
+    return { ...element, onClick: () => setActiveIndex(index) };
   });
 
+  const [activeIndex, setActiveIndex] = useState(0)
   const [offsetRadius, setOffsetRadius] = useState(4);
   const [showArrows, setShowArrows] = useState(false);
-  const [goToSlide, setGoToSlide] = useState(null);
   const [cards] = useState(table);
 
   useEffect(() => {
@@ -19,8 +19,8 @@ export default function Carrousel(props) {
   }, [props.offset, props.showArrows]);
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => setGoToSlide((prevSlide) => prevSlide + 1),
-    onSwipedRight: () => setGoToSlide((prevSlide) => prevSlide - 1),
+    onSwipedLeft: () => setActiveIndex((prevSlide) => prevSlide + 1),
+    onSwipedRight: () => setActiveIndex((prevSlide) => prevSlide - 1),
   });
 
   const containerStyles = {
@@ -37,7 +37,7 @@ export default function Carrousel(props) {
     >
       <Carousel
         slides={cards}
-        goToSlide={goToSlide}
+        goToSlide={activeIndex}
         offsetRadius={offsetRadius}
         showNavigation={showArrows}
         animationConfig={config.gentle}

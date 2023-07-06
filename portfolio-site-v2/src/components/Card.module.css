@@ -7,11 +7,18 @@
   object-fit: fill !important;
 }
 
+.unflipped-title {
+  font-family: 'Moirai One', cursive;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -65px;
+}
+
 .details {
   transform: rotateX(180deg);
   position: absolute;
   bottom: 0;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .card-text {
@@ -34,25 +41,22 @@
 .card p {
   font-size: 1rem;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: transparent;
+  border: 1px solid black;
   border-radius: 6px;
   padding: 20px;
   margin: 0 20px 20px 20px;
 }
 
 .button-group {
-  position: absolute;
-  right: 0;
-  bottom: -30px;
-  margin: 0 10px 10px 0;
+  margin-top: 10px;
   color: white;
 }
 
 .card-button {
   border: none;
   background-color: transparent;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   cursor: pointer;
 }
 
@@ -63,8 +67,13 @@
 }
 
 @media (min-width: 1000px) {
+  .unflipped-title {
+    font-size: 2.5rem;
+    top: -90px;
+  }
+
   .card h3 {
-    margin-top: 30px !important;
+    margin-top: 35px !important;
     font-size: 2.5rem;
     margin: 6px 6px 40px 6px;
   }
@@ -86,14 +95,6 @@
 
   .card img {
     height: 345px;
-  }
-
-  .button-group {
-    bottom: -60px;
-  }
-
-  .details {
-    overflow: visible;
   }
 
   .video-container .project-video {

@@ -25,7 +25,7 @@ function Card({
     width: flipped ? "1000px" : "600px",
     top: flipped ? "20%" : "40%",
     color: "black",
-    config: { mass: 1, tension: 70, friction: 30 },
+    config: { mass: 5, tension: 600, friction: 100 },
   });
 
 
@@ -53,6 +53,7 @@ function Card({
       onClick={handleCardClick}
     >
       <div className={Styles.front}>
+        <h1 className={Styles['unflipped-title']} style={!flipped ? {display:'block'} : {display:'none'}}>{title}</h1>
         {!flipped && (
           <img className={Styles["project-img"]} src={imageSrc} alt={alt} />
         )}
@@ -70,35 +71,34 @@ function Card({
                 {framework}
               </h4>
               <h4>Date created: {dateCreated}</h4>
+              <div className={Styles["button-group"]}>
+                {linkOne && (
+                  <button
+                    className={Styles["card-button"]}
+                    onClick={handleButton1Click}
+                  >
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                  </button>
+                )}
+                {linkTwo && (
+                  <button
+                    className={Styles["card-button"]}
+                    onClick={handleButton2Click}
+                  >
+                    <i className="fa-brands fa-github"></i>
+                  </button>
+                )}
+              </div>
             </div>
             <div className={Styles["video-container"]}>
               <video
                 className={Styles["project-video"]}
                 autoPlay
                 loop
-                muted
                 playsInline
               >
                 <source src={videoSrc} type="video/mp4" />
               </video>
-            </div>
-            <div className={Styles["button-group"]}>
-              {linkOne && (
-                <button
-                  className={Styles["card-button"]}
-                  onClick={handleButton1Click}
-                >
-                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                </button>
-              )}
-              {linkTwo && (
-                <button
-                  className={Styles["card-button"]}
-                  onClick={handleButton2Click}
-                >
-                  <i className="fa-brands fa-github"></i>
-                </button>
-              )}
             </div>
           </div>
         </div>
