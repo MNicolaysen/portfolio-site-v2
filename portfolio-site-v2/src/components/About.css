@@ -5,6 +5,7 @@
 
 .about-overlay {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
@@ -67,7 +68,7 @@
 
 @media (min-width: 1000px) {
   .about-overlay {
-    height: 650px;
+    height: 685px;
   }
 
   .react-tabs__tab {

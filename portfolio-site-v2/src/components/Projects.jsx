@@ -123,7 +123,7 @@ function Projects() {
           fontSize:'30px',
         }}
       >
-          <i className="fa-solid fa-arrow-left" style={{margin:'5px'}}></i>
+          <i className="fa-solid fa-arrow-left" style={{margin:'10px'}}></i>
       </Link>
       <CarouselWrapper
         cards={cards}

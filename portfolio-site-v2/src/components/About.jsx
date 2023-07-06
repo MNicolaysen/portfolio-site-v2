@@ -87,8 +87,8 @@ function About() {
     <>
       {windowOpen && (
         <div id='about-container' className='about-container'>
-          <button className='close-btn' onClick={handleCloseWindow}>X</button>
           <div className='about-overlay'>
+          <button className='close-btn' onClick={handleCloseWindow}>X</button>
             <div className='about-content'>
               <Tabs defaultIndex={0}>
                 <TabList>
