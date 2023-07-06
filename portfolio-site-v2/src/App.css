@@ -7,7 +7,7 @@ html, body {
 
 .close-btn {
   align-self: flex-start;
-  margin: 60px 0 0 15px;
+  margin: 60px 0 0 5px;
   font-size: 2rem;
   font-weight: bold;
   color: red;
