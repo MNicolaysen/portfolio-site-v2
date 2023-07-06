@@ -9,7 +9,7 @@
 
 .unflipped-title {
   font-family: 'Moirai One', cursive;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   position: absolute;
   top: -65px;
 }
@@ -28,7 +28,7 @@
 }
 
 .card h3 {
-  font-size: 1.875rem;
+  font-size: 1.2rem;
   text-align: center;
   margin: 20px 6px 20px 6px;
 }
@@ -44,7 +44,7 @@
   background-color: transparent;
   border: 1px solid black;
   border-radius: 6px;
-  padding: 20px;
+  padding: 10px;
   margin: 0 20px 20px 20px;
 }
 
@@ -69,7 +69,7 @@
 }
 
 @media (min-width: 1000px) {
-  .unflipped-title {
+.unflipped-title {
     font-size: 2.5rem;
     top: -90px;
   }
@@ -87,6 +87,7 @@
   .card p {
     font-size: 1.2rem;
     margin-left: 0;
+    padding: 20px;
   }
 
   .card-text {
