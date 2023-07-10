@@ -77,7 +77,7 @@ function Landing() {
                 height:'30px',
                 width:'31px'
               }
-            } href="./src/components/CV_compressed.pdf" download>
+            } href="./src/components/CV.pdf" download>
               <p className="cv">CV</p>
             </a>
           </li>
