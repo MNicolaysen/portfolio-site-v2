@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import Card from "./Card";
+import { Link } from 'react-router-dom';
 import CarouselWrapper from "./CarouselWrapper";
 import memeGenerator from '../components/images/projects/meme-generator.png';
 import restaurantApp from "../components/images/projects/restaurant.png";
@@ -13,7 +14,6 @@ import restaurantAppVideo from '../components/images/projects/restaurant-vid.mp4
 import passwordGeneratorVideo from '../components/images/projects/password-generator-vid.mp4'
 import unitConverterVideo from '../components/images/projects/unit-converter-vid.mp4'
 import plantSwapVideo from '../components/images/projects/le-wagon-demo-day.mp4'
-import { Link } from 'react-router-dom';
 
 
 function Projects() {
@@ -27,7 +27,7 @@ function Projects() {
           alt="Meme Generator"
           framework='React.js'
           dateCreated='May 2023'
-          description='This is a project that I completed in my course with Scrimba. Through the module, I put into practice the use of useState, useEffect, props, and APIs.'
+          description="During my course with Scrimba, I successfully completed a project that allowed me to apply several important concepts in React, including useState, useEffect, props, and APIs. The project involved creating a meme generator with two input fields, one for the top text and another for the bottom text. These inputs dynamically displayed the user's text on a meme image. Additionally, I implemented a button to generate a new random meme image by fetching data from a meme image API. This project provided hands-on experience in integrating APIs and managing state in React applications."
           linkOne='https://sparkly-alpaca-2bb10d.netlify.app'
           linkTwo=''
           linkThree=''
@@ -44,7 +44,7 @@ function Projects() {
           alt="Travel Journal"
           framework="React.js"
           dateCreated='May 2023'
-          description="The purpose of this app was for me to put into practice the use of props in React. It's a simple travel journal for my recent trip to Malaysia and Indonesia."
+          description="I created a travel journal web app to practice using React props. It allowed me to dynamically display content and customize the app based on my experiences during a trip to Malaysia and Indonesia. Props helped me pass data between components, promoting reusability and efficient code organization. This project highlighted the value of props in React development."
           linkOne="https://verdant-tapioca-d5a576.netlify.app"
           linkTwo='https://github.com/MNicolaysen/scrimba-travel-journal'
           linkThree=''
@@ -61,7 +61,7 @@ function Projects() {
           alt="Restaurant"
           framework="JavaScript"
           dateCreated='January 2023'
-          description="I created this app with vanilla JavaScript. It's a restaurant ordering app that allows you to add items into your cart, remove them from the cart, and proceed to checkout."
+          description="I developed a restaurant ordering app using vanilla JavaScript. The app enables users to add items to their cart, remove items from the cart, and proceed to checkout. As items are added or removed, the app dynamically updates the total price of each item and the overall cart total. This project provided valuable insights into displaying elements on a webpage in response to button clicks. It was an engaging experience to witness the real-time updates and calculations based on user interactions."
           linkOne="https://monumental-platypus-9e161c.netlify.app"
           linkTwo='https://github.com/MNicolaysen/mobile-restaurant-menu'
           linkThree=''
@@ -78,7 +78,7 @@ function Projects() {
           alt="Password Generator"
           framework="JavaScript"
           dateCreated='February 2023'
-          description="This is an early app I made with my course with Scrimba. It generates a random password for you each time the button is clicked."
+          description="I created an early app during my course with Scrimba. The app generates a random password when the button is clicked. It was a valuable learning experience for me as it allowed me to practice deploying a webpage using Netlify and gain a better understanding of the deployment process."
           linkOne="https://gilded-tapioca-d75ef6.netlify.app"
           linkTwo='https://github.com/MNicolaysen/password-generator'
           linkThree=''
@@ -95,7 +95,7 @@ function Projects() {
           alt="Unit Converter"
           framework="JavaScript"
           dateCreated='October 2022'
-          description="This is one of the first apps I created using JavaScript. It will convert any number you put in the input field into either, Meters/Feet, Litres/Gallons, Kilos/Pounds."
+          description="I created one of my first JavaScript apps that performs unit conversions. It allows you to enter a number in the input field and converts it into different units, such as meters/feet, liters/gallons, and kilos/pounds. It was a great learning experience for me to practice JavaScript programming and understand how to handle unit conversions in a web application."
           linkOne="https://lovely-speculoos-f313a9.netlify.app"
           linkTwo='https://github.com/MNicolaysen/scrimba-unit-converter'
           linkThree=''
@@ -112,7 +112,8 @@ function Projects() {
           alt="PlantSwap"
           framework="Ruby on Rails"
           dateCreated='June 2022'
-          description="This was the final project that me and my team created in Le Wagon. We created a platform for people to swap and donate their plants. A couple of features included were a live chat and the use of map API."
+          description="
+          For our final project at Le Wagon, my team and I created a plant swapping and donation platform. It featured a live chat for easy communication and utilized map APIs for convenient local connections. We focused on creating an intuitive user interface and tackled challenges like user authentication and database optimization. The project showcased our ability to combine plant enthusiasm with modern technology for a meaningful and engaging platform."
           linkOne=""
           linkTwo='https://github.com/MNicolaysen/plant-swap'
           linkThree='https://www.youtube.com/watch?v=yB-CzDoPWR0'
@@ -139,7 +140,6 @@ function Projects() {
         width="100%"
         margin="0 auto"
         offset={200}
-        showArrows={false}
       />
     </div>
   );

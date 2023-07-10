@@ -56,7 +56,7 @@ function Card({
           {title}
         </h1>
         {!flipped && (
-          <img className={Styles["project-img"]} src={imageSrc} alt={alt} />
+          <img className={Styles["project-img"]} style={{cursor:'pointer'}} src={imageSrc} alt={alt} />
         )}
       </div>
       {flipped && (
