@@ -47,7 +47,6 @@
   text-align: center;
   background-color: transparent;
   border: 1px solid black;
-  border-radius: 6px;
   padding: 10px;
   margin: 0 20px 20px 20px;
 }
@@ -73,15 +72,18 @@
 }
 
 @media (min-width: 1000px) {
-.unflipped-title {
+  .unflipped-title {
     font-size: 2.5rem;
     top: -90px;
   }
 
+  .card-details-bottom {
+    display: block;
+  }
+
   .card h3 {
-    margin-top: 35px !important;
     font-size: 2.5rem;
-    margin: 6px 6px 40px 6px;
+    margin: 40px 6px 40px 6px;
   }
 
   .card h4 {
@@ -94,7 +96,7 @@
     padding: 20px;
   }
 
-  .card-text {
+  .card .card-text {
     position: absolute;
     right: 0;
     width: 40%;
@@ -104,15 +106,6 @@
     margin-top: 15px;
   }
 
-  .sub-details {
-    flex-direction: none;
-  }
-
-  .card-details-bottom {
-    display: block;
-  }
-
-
   .card img {
     height: 345px;
   }
@@ -120,6 +113,5 @@
   .video-container .project-video {
     margin: 0 0 0 20px;
     width: 55%;
-    max-height: 80px;
   }
 }

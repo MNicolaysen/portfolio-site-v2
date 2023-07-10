@@ -67,55 +67,57 @@ function Card({
         <div className={Styles.back}>
           <div className={Styles.details}>
             <h3 className={Styles["card-title"]}>{title}</h3>
-            <div className={Styles["card-text"]}>
-              <p>{description}</p>
-              <div className={Styles["card-details-bottom"]}>
-                <div className={Styles["sub-details"]}>
-                  <h4>
-                    {framework === "React.js" || framework === "Ruby on Rails"
-                      ? "Framework:"
-                      : "Language:"}{" "}
-                    {framework}
-                  </h4>
-                <h4>Date created: {dateCreated}</h4>
+            <div className="card-content">
+              <div className={Styles["card-text"]}>
+                <p>{description}</p>
+                <div className={Styles["card-details-bottom"]}>
+                  <div className={Styles["sub-details"]}>
+                    <h4>
+                      {framework === "React.js" || framework === "Ruby on Rails"
+                        ? "Framework:"
+                        : "Language:"}{" "}
+                      {framework}
+                    </h4>
+                  <h4>Date created: {dateCreated}</h4>
+                  </div>
+                  <div className={Styles["button-group"]}>
+                    {linkOne && (
+                      <button
+                        className={Styles["card-button"]}
+                        onClick={handleButton1Click}
+                      >
+                        <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                      </button>
+                    )}
+                    {linkTwo && (
+                      <button
+                        className={Styles["card-button"]}
+                        onClick={handleButton2Click}
+                      >
+                        <i className="fa-brands fa-github"></i>
+                      </button>
+                    )}
+                    {linkThree && (
+                      <button
+                        className={Styles["card-button"]}
+                        onClick={handleButton3Click}
+                      >
+                        <i className="fa-brands fa-youtube"></i>
+                      </button>
+                    )}
                 </div>
-                <div className={Styles["button-group"]}>
-                  {linkOne && (
-                    <button
-                      className={Styles["card-button"]}
-                      onClick={handleButton1Click}
-                    >
-                      <i className="fa-solid fa-arrow-up-right-from-square"></i>
-                    </button>
-                  )}
-                  {linkTwo && (
-                    <button
-                      className={Styles["card-button"]}
-                      onClick={handleButton2Click}
-                    >
-                      <i className="fa-brands fa-github"></i>
-                    </button>
-                  )}
-                  {linkThree && (
-                    <button
-                      className={Styles["card-button"]}
-                      onClick={handleButton3Click}
-                    >
-                      <i className="fa-brands fa-youtube"></i>
-                    </button>
-                  )}
+                </div>
               </div>
+              <div className={Styles["video-container"]}>
+                <video
+                  className={Styles["project-video"]}
+                  autoPlay
+                  loop
+                  playsInline
+                >
+                  <source src={videoSrc} type="video/mp4" />
+                </video>
               </div>
-            </div>
-            <div className={Styles["video-container"]}>
-              <video
-                className={Styles["project-video"]}
-                autoPlay
-                loop
-                playsInline
-              >
-                <source src={videoSrc} type="video/mp4" />
-              </video>
             </div>
           </div>
         </div>
