@@ -1,9 +1,9 @@
-import landingBackground from '../components/images/landing-background.mp4';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import About from '../components/About';
 import Contact from '../components/Contact'
 import './Landing.css';
+import landingBackground from '../components/images/landing-background.mp4';
 
 function Landing() {
   const [showAbout, setShowAbout] = useState(false);
