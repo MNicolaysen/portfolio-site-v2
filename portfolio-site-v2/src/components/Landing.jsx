@@ -25,7 +25,6 @@ function Landing() {
   }, []);
 
   return (
-
     <div>
       <meta name="theme-color" content="transparent"/>
       <div className='landing-container'>
@@ -96,7 +95,7 @@ function Landing() {
           <li className='nav-link' onClick={handleContactClick}>C O N T A C T</li>
         </ul>
 
-        <a className='portfolio-v1' href="https://legendary-crostata-9441e6.netlify.app">V1</a>
+        <a className='portfolio-v1' href="https://legendary-crostata-9441e6.netlify.app" target="_blank" rel="noopener noreferrer">V1</a>
       </div>
       {showAbout && <About />}
       {showContact && <Contact />}

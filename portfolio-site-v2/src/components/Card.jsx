@@ -1,6 +1,6 @@
-import Styles from "./Card.module.css";
 import { useState } from "react";
 import { useSpring, animated } from "react-spring";
+import Styles from "./Card.module.css";
 
 function Card({
   imageSrc,
@@ -14,7 +14,6 @@ function Card({
   linkThree,
   videoSrc,
 }) {
-
   const [flipped, setFlipped] = useState(false);
 
   const props3 = useSpring({
@@ -29,27 +28,18 @@ function Card({
     config: { mass: 5, tension: 600, friction: 100 },
   });
 
-
   if (window.matchMedia("(max-width: 999px)").matches) {
     props3.width = "340px";
-    props3.height = flipped ? '85%' : '200px'
+    props3.height = flipped ? "85%" : "200px";
   }
 
   const handleCardClick = () => {
     setFlipped(!flipped);
   };
 
-  const handleButton1Click = () => {
-    window.open(linkOne, "_blank");
+  const handleButtonClick = (link) => {
+    window.open(link, "_blank");
   };
-
-  const handleButton2Click = () => {
-    window.open(linkTwo, "_blank");
-  };
-
-  const handleButton3Click = () => {
-    window.open(linkThree, "_blank");
-  }
 
   return (
     <animated.div
@@ -58,7 +48,13 @@ function Card({
       onClick={handleCardClick}
     >
       <div className={Styles.front}>
-        <h1 className={Styles['unflipped-title']} style={!flipped ? {display:'block'} : {display:'none'}}>{title}</h1>
+        <h1
+          className={`${Styles["unflipped-title"]} ${
+            flipped ? Styles.hideTitle : ""
+          }`}
+        >
+          {title}
+        </h1>
         {!flipped && (
           <img className={Styles["project-img"]} src={imageSrc} alt={alt} />
         )}
@@ -78,13 +74,13 @@ function Card({
                         : "Language:"}{" "}
                       {framework}
                     </h4>
-                  <h4>Date created: {dateCreated}</h4>
+                    <h4>Date created: {dateCreated}</h4>
                   </div>
                   <div className={Styles["button-group"]}>
                     {linkOne && (
                       <button
                         className={Styles["card-button"]}
-                        onClick={handleButton1Click}
+                        onClick={() => handleButtonClick(linkOne)}
                       >
                         <i className="fa-solid fa-arrow-up-right-from-square"></i>
                       </button>
@@ -92,7 +88,7 @@ function Card({
                     {linkTwo && (
                       <button
                         className={Styles["card-button"]}
-                        onClick={handleButton2Click}
+                        onClick={() => handleButtonClick(linkTwo)}
                       >
                         <i className="fa-brands fa-github"></i>
                       </button>
@@ -100,12 +96,12 @@ function Card({
                     {linkThree && (
                       <button
                         className={Styles["card-button"]}
-                        onClick={handleButton3Click}
+                        onClick={() => handleButtonClick(linkThree)}
                       >
                         <i className="fa-brands fa-youtube"></i>
                       </button>
                     )}
-                </div>
+                  </div>
                 </div>
               </div>
               <div className={Styles["video-container"]}>

@@ -15,6 +15,10 @@
   top: -65px;
 }
 
+.hideTitle {
+  display: none;
+}
+
 .details {
   transform: rotateX(180deg);
   position: absolute;
