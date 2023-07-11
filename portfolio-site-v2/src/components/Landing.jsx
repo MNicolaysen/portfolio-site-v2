@@ -77,7 +77,7 @@ function Landing() {
                 height:'30px',
                 width:'31px'
               }
-            } href="./src/components/CV.pdf" download>
+            } href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:d3d7fea6-dd4a-4042-a15b-acfdb18129ac" target="_blank" rel="noopener noreferrer">
               <p className="cv">CV</p>
             </a>
           </li>
