@@ -36,8 +36,8 @@ export const aboutContent = [
           However, as time went on, I lost touch with that passion.
           Growing up in Llangrannog, a quaint coastal village heavily reliant on tourism,
           there were no tech-based opportunities available.
-          To make a living, I took on various jobs, from working behind the bar in local pubs
-          to picking kiwis in New Zealand and lifeguarding on the beautiful beaches of Ceredigion.
+          To make a living, I took on various jobs, from working behind the bar in the local pubs
+          to valeting in a restaurant car park and my favourite, lifeguarding on the beautiful beaches of Ceredigion.
           These seasonal roles allowed me to indulge in my love for travel, particularly to surf destinations like New Zealand,
           Portugal, Bali, the Canary Islands, and France.
         </p>
