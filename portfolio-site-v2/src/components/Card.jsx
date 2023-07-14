@@ -30,7 +30,7 @@ function Card({
 
   if (window.matchMedia("(max-width: 999px)").matches) {
     props3.width = "340px";
-    props3.height = flipped ? "85%" : "180px";
+    props3.height = flipped ? "83%" : "200px";
   }
 
   const handleCardClick = () => {
