@@ -4,7 +4,7 @@ export const aboutContent = [
     text: (
       <div className='sheet'>
         <p className='sheet-text'>
-          Hey, I'm Morton, a 27-year-old aspiring web developer living in London.
+          Hey, I'm Morton, a 28 year old aspiring web developer living in London.
           I made the move here a little over a year ago to pursue a career as a web developer.
           I wasted no time and jumped right into a full-stack web developer bootcamp with Le Wagon,
           which was the best intro into web development I could have asked for.
@@ -25,7 +25,7 @@ export const aboutContent = [
     text: (
       <div className='sheet'>
         <p className='sheet-text'>
-          Hey, I'm Morton, a 27-year-old web developer originally from a small village called Llangrannog in West Wales.
+          Hey, I'm Morton, a 28 year old aspiring web developer originally from a small village called Llangrannog in West Wales.
           Over a year ago, I made the exciting move to London to pursue a career in web development.
           Let me share a bit about my journey.
         </p>
@@ -63,7 +63,7 @@ export const aboutContent = [
           However, I wanted to further refine my skills before diving into a web developer role.
           I took the time to settle into London, embrace the city, and explore everything it had to offer.
           Additionally, I enrolled in an online course with Scrimba, which allows me to learn at my own pace.
-          Currently, I'm focusing on masteringReact.js and plan to expand my skills in SQL and backend development.
+          Currently, my focus is on mastering React.js.
         </p>
         <br />
         <p className='sheet-text'>Check out my portfolio to see some of the projects I've been working on!</p>
