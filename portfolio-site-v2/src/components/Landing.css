@@ -1,9 +1,3 @@
-.landing-container {
-  max-width: 100%;
-  overflow: hidden;
-  background-color: rgb(208, 206, 206);
-}
-
 /* video */
 .landing-video {
   width: 100%;
@@ -70,7 +64,7 @@
 }
 
 .nav-link {
-  margin-bottom: 1.25em;
+  margin-bottom: .7em;
   cursor: pointer;
 }
 
@@ -99,12 +93,6 @@
   }
 
 @media (min-width: 1000px) {
-   /* video  */
-   .landing-video {
-    max-height: 100%;
-    top: 0;
-  }
-
   /* header  */
   .landing-container h1 {
     font-size: 10em;
@@ -124,7 +112,6 @@
   /* nav  */
   .navigation {
     font-size: 1.56em;
-    margin: 0 1em 0 0;
   }
 
   /* icons  */
