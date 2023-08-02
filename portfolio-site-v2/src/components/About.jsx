@@ -16,9 +16,11 @@ function About() {
       {windowOpen && (
         <div id='about-container' className='about-container'>
           <div className='about-overlay'>
+            {/* top left close button  */}
             <button className='close-btn' onClick={handleCloseWindow}>X</button>
             <div className='about-content'>
               <Tabs defaultIndex={0}>
+                {/* display tab titles  */}
                 <TabList>
                   {aboutContent.map((content, index) => (
                     <Tab key={index} selectedClassName='selected-tab'>
@@ -26,7 +28,7 @@ function About() {
                     </Tab>
                   ))}
                 </TabList>
-
+                {/* display about content  */}
                 {aboutContent.map((content, index) => (
                   <TabPanel key={index}>
                     <div className='about'>{content.text}</div>

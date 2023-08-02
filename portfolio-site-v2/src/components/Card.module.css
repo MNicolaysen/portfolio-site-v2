@@ -1,24 +1,27 @@
 .card {
-  margin-top: 30px;
+  margin-top: 1.875em;
 }
 
+/* main display img  */
 .card img {
   width: 100%;
   object-fit: fill !important;
-  height: 200px;
+  height: 12.5em;
 }
 
+/* main display title  */
 .unflipped-title {
   font-family: 'Moirai One', cursive;
-  font-size: 1.6rem;
+  font-size: 1.6em;
   position: absolute;
-  top: -65px;
+  top: -2.2em;
 }
 
 .hideTitle {
   display: none;
 }
 
+/* project details */
 .details {
   transform: rotateX(180deg);
   position: absolute;
@@ -35,76 +38,90 @@
   justify-content: space-evenly;
 }
 
+/* flipped header  */
 .card h3 {
-  font-size: 1.2rem;
+  font-size: 1.2em;
   text-align: center;
-  margin: 20px 6px 20px 6px;
+  margin: 1.25em 0.375em 1.25em 0.375em;
 }
 
 .card h4 {
   font-size: 0.8rem;
-  margin: 0 0 10px 10px;
+  margin: 0 0 0.675em 0.675em;
 }
 
 .card p {
-  font-size: 1rem;
+  font-size: 1em;
   text-align: center;
   background-color: transparent;
   border: 1px solid black;
-  padding: 10px;
-  margin: 0 20px 20px 20px;
+  padding: 0.625em;
+  margin: 0 1.25em 1.25em 1.25em;
   overflow-y: scroll;
-  height: 100px;
+  height: 6.25em;
 }
 
+/* proejct link icons  */
 .button-group {
-  margin-top: 10px;
+  margin-top: 0.675em;
   color: white;
 }
 
 .card-button {
   border: none;
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
+/* project demo vid  */
 .video-container .project-video {
-  margin: 15px;
+  margin: 0.9375em;
   width: 90%;
   border: 1px solid black;
 }
 
 @media (min-width: 1000px) {
   .card {
-    margin-top: 50px;
+    margin-top: 3.125em;
   }
 
+  /* main display img  */
+  .card img {
+    height: 21.5624em;
+  }
+
+  /* main display title  */
   .unflipped-title {
-    font-size: 2.5rem;
-    top: -90px;
+    font-size: 2.5em;
+  }
+
+  /* card details */
+  .details {
+    overflow-y: visible;
   }
 
   .card-details-bottom {
     display: block;
   }
 
+  /* flipped header  */
   .card h3 {
-    font-size: 2.5rem;
-    margin: 40px 6px 40px 6px;
+    font-size: 2.7em;
+    margin: .8em 0.375em .8em 0.375em;
   }
 
   .card h4 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   .card p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin-left: 0;
-    padding: 10px 15px;
-    height: 160px;
+    padding: 0.625em 0.935em;
+    height: 9em;
   }
 
   .card .card-text {
@@ -114,15 +131,12 @@
   }
 
   .card-button {
-    margin-top: 15px;
+    margin-top: .1em;
   }
 
-  .card img {
-    height: 345px;
-  }
-
+  /* project demo vid  */
   .video-container .project-video {
-    margin: 0 0 0 20px;
-    width: 55%;
+    margin: 0 0 0 1.25em;
+    width: 56%;
   }
 }

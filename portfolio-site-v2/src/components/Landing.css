@@ -4,6 +4,7 @@
   background-color: rgb(208, 206, 206);
 }
 
+/* video */
 .landing-video {
   width: 100%;
   height: 100%;
@@ -12,10 +13,11 @@
   position: absolute;
 }
 
+/* header  */
 .landing-container h1 {
   z-index: 1;
-  font-size: 3.75rem;
-  margin: 30px 0 0 0;
+  font-size: 3.75em;
+  margin: .1em 0;
 }
 
 .first-name, .surname {
@@ -32,11 +34,12 @@
   top: 13%;
 }
 
+/* icons  */
 .contact-link-header {
   display: flex;
   justify-content: center;
-  font-size: 2.2rem;
-  margin: 10px 0 0 10px;
+  font-size: 2.2em;
+  margin: 0.2em 0 0 0.3em;
   cursor: pointer;
   font-style: normal;
 }
@@ -56,46 +59,55 @@
   transform: scale(1.3);
 }
 
+/* nav  */
 .navigation {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   list-style: none;
-  margin: 0 15px 0 0;
+  margin: 0 0.975em 0 0;
 }
 
 .nav-link {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
   cursor: pointer;
 }
 
-.portfolio-v1 {
+/* corner fold */
+.fold::before {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  text-decoration: none;
-  color: black;
-  font-size: 1.875rem;
-  margin: 0 0 10px 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  transition: all 0.3s ease-in-out;
+  border-style: solid;
+  border-width: 2.5em 0 0 2.5em;
+  border-color: #ddd #344;
+  transition: all ease 0.4s;
 }
 
-.portfolio-v1:hover {
-  width: 400px;
-  height: 200px;
-  background-image: url('./images/portfolio-v1.png');
-  z-index: 1;
-  color: transparent;
-}
+  /* portfolio display  */
+  .portfolio-v1 {
+    position: absolute;
+    bottom: -26px;
+    left: -26px;
+    background-size: cover;
+    width: 5em;
+    height: 5em;
+    background-image: url('./images/v1-corner.png');
+    opacity: 0;
+  }
 
 @media (min-width: 1000px) {
+   /* video  */
+   .landing-video {
+    max-height: 100%;
+    top: 0;
+  }
+
+  /* header  */
   .landing-container h1 {
-    font-size: 10rem;
+    font-size: 10em;
     padding: 20px;
   }
 
@@ -109,17 +121,39 @@
     right: 0;
   }
 
+  /* nav  */
   .navigation {
-    font-size: 1.56rem;
-    margin: 0 30px 0 0;
+    font-size: 1.56em;
+    margin: 0 1em 0 0;
   }
 
+  /* icons  */
   .contact-links {
-    top: 0;
+    top: -15px;
   }
 
-  .landing-video {
-    max-height: 100%;
-    top: 0;
+  /* corner fold  */
+  .fold::before {
+    border-width: 6.25em 0 0 6.25em;
+  }
+
+  .fold:hover::before {
+    border-width: 13.43em 0 0 13.43em;
+    border-color: #eee transparent;
+  }
+
+  /* portfolio display  */
+  .portfolio-v1 {
+    bottom: -130px;
+    left: -135px;
+    width: 25.3em;
+    height: 25.3em;
+    transition: opacity 0.9s ease-in-out;
+    visibility: hidden;
+  }
+
+  .fold:hover .portfolio-v1 {
+    opacity: 1;
+    visibility: visible;
   }
 }

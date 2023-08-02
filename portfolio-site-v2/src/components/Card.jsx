@@ -3,34 +3,35 @@ import { useSpring, animated } from "react-spring";
 import Styles from "./Card.module.css";
 
 function Card({
-  imageSrc,
-  title,
-  description,
-  dateCreated,
-  framework,
-  alt,
-  linkOne,
-  linkTwo,
-  linkThree,
-  videoSrc,
-}) {
+    imageSrc,
+    title,
+    description,
+    dateCreated,
+    framework,
+    alt,
+    linkOne,
+    linkTwo,
+    linkThree,
+    videoSrc,
+  }) {
   const [flipped, setFlipped] = useState(false);
 
+  // project card flipped/ unflipped styling
   const props3 = useSpring({
     opacity: 1,
     transform: `rotateX(${flipped ? 180 : 0}deg)`,
     backgroundColor: "white",
     border: "1px solid black",
-    height: flipped ? "500px" : "345px",
-    width: flipped ? "1000px" : "600px",
+    height: flipped ? "31.25em" : "21.5625em",
+    width: flipped ? "62.5em" : "37.5em",
     top: flipped ? "20%" : "40%",
     color: "black",
     config: { mass: 5, tension: 600, friction: 100 },
   });
 
   if (window.matchMedia("(max-width: 999px)").matches) {
-    props3.width = "340px";
-    props3.height = flipped ? "80%" : "200px";
+    props3.width = "21.25em";
+    props3.height = flipped ? "80%" : "12.5em";
   }
 
   const handleCardClick = () => {
