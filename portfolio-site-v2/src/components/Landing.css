@@ -155,13 +155,13 @@
   }
 
   /* corner fold */
-.corner-fold .fold::before {
+  .corner-fold .fold::before {
   border-width: 7em 0 0 7em;
-}
+  }
 
-.corner-fold h3 {
+  .corner-fold h3 {
   bottom: -15px;
   left: 125px;
   font-size: 1.2em;
-}
+  }
 }
