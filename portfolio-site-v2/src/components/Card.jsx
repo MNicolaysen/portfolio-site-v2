@@ -128,7 +128,7 @@ function Card({
                 ref={videoRef}
                 onTimeUpdate={handleTimeUpdate}
                 onLoadedMetadata={handleMetadataLoaded}
-                onLoadedData={() => setLoading(false)} // Set loading state to false when video data is loaded
+                onLoadedData={() => setLoading(false)}
                 className={Styles["project-video"]}
                 autoPlay
                 loop
