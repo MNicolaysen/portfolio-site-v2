@@ -1,6 +1,7 @@
 .about-container {
-  position: relative;
   z-index: 2;
+  position: absolute;
+  top: -50px;
 }
 
 /* about display container  */
@@ -67,6 +68,10 @@
 }
 
 @media (min-width: 1000px) {
+  .about-container {
+    top: 0;
+  }
+
   .about-overlay {
     height: 42.8125em;
     max-height: 42.8125em;

@@ -111,11 +111,15 @@ function Landing() {
       </div>
 
       {/* corner fold  */}
-      <div className='fold'>
-        <a className='portfolio-v1' href="https://legendary-crostata-9441e6.netlify.app" target="_blank" rel="noopener noreferrer"></a>
+      <div className='corner-fold'>
+        <div className='fold'>
+          <a className='portfolio-v1' href="https://legendary-crostata-9441e6.netlify.app" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+        <h3>← Checkout my portfolio V1</h3>
       </div>
 
-      {/* bottom right nav links */}
+
+      {/* About and contact components when displayed */}
       {showAbout && <About />}
       {showContact && <Contact />}
     </div>

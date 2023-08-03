@@ -55,42 +55,51 @@
 
 /* nav  */
 .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 1.25em;
-  list-style: none;
-  margin: 0 0.975em 0 0;
 }
 
 .nav-link {
-  margin-bottom: .7em;
+  font-size: 1.1em;
+  list-style: none;
+  margin: 0 0.975em 0 0;
+  margin-top: .5em;
   cursor: pointer;
 }
 
 /* corner fold */
-.fold::before {
+.corner-fold .fold::before {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   border-style: solid;
-  border-width: 2.5em 0 0 2.5em;
+  border-width: 7em 0 0 7em;
   border-color: #ddd #344;
   transition: all ease 0.4s;
 }
 
-  /* portfolio display  */
-  .portfolio-v1 {
-    position: absolute;
-    bottom: -26px;
-    left: -26px;
-    background-size: cover;
-    width: 5em;
-    height: 5em;
-    background-image: url('./images/v1-corner.png');
-    opacity: 0;
-  }
+/* corner fold display img  */
+.portfolio-v1 {
+  position: absolute;
+  background-image: url('./images/v1-corner.png');
+  opacity: 0;
+}
+
+.corner-fold h3 {
+  position: absolute;
+  bottom: -15px;
+  left: 125px;
+}
+
+.corner-fold:hover h3 {
+  display: none;
+}
 
 @media (min-width: 1000px) {
   /* header  */
