@@ -8,7 +8,7 @@ html, body {
 
 .close-btn {
   align-self: flex-start;
-  margin: 60px 0 0 0;
+  /* margin: 60px 0 0 0; */
   font-size: 2em;
   font-weight: bold;
   color: red;
@@ -20,6 +20,6 @@ html, body {
 
 @media (min-width: 1000px) {
   .close-btn {
-    margin: 10px 0 0 210px;
+    margin: 55px 0 0 210px;
   }
 }
