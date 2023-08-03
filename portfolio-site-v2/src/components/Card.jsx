@@ -1,8 +1,6 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Styles from "./Card.module.css";
-import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 
 
 function Card({
@@ -43,21 +41,6 @@ function Card({
 
   const handleButtonClick = (link) => {
     window.open(link, "_blank");
-  };
-
-  // video loading bar
-  const [loading, setLoading] = useState(true);
-
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const videoRef = useRef();
-
-  const handleTimeUpdate = () => {
-    setCurrentTime(videoRef.current.currentTime);
-  };
-
-  const handleMetadataLoaded = () => {
-    setDuration(videoRef.current.duration);
   };
 
   return (
@@ -125,10 +108,6 @@ function Card({
               </div>
               <div className={Styles["video-container"]}>
               <video
-                ref={videoRef}
-                onTimeUpdate={handleTimeUpdate}
-                onLoadedMetadata={handleMetadataLoaded}
-                onLoadedData={() => setLoading(false)}
                 className={Styles["project-video"]}
                 autoPlay
                 loop
@@ -137,18 +116,7 @@ function Card({
                 src={videoSrc}
               >
               </video>
-              {loading && (
-                <div className={Styles["loading-overlay"]}>
-                  <CircularProgressbar
-                    value={currentTime}
-                    maxValue={duration}
-                    styles={{
-                      path: { stroke: '#3e98c7' },
-                      trail: { stroke: '#d6d6d6' },
-                    }}
-                  />
-                </div>
-              )}
+              <div className={Styles["empty-vid-container"]}></div>
               </div>
             </div>
           </div>
