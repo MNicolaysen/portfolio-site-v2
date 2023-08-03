@@ -83,6 +83,20 @@
   border: 1px solid black;
 }
 
+/* video loading wheel  */
+.loading-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255);
+  height: 250px;
+  width: 250px;
+  padding: 50px 175px;
+}
+
 @media (min-width: 1000px) {
   .card {
     margin-top: 3.125em;

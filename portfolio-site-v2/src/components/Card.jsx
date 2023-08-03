@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import Styles from "./Card.module.css";
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 function Card({
     imageSrc,
@@ -40,6 +43,21 @@ function Card({
 
   const handleButtonClick = (link) => {
     window.open(link, "_blank");
+  };
+
+  // video loading bar
+  const [loading, setLoading] = useState(true);
+
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const videoRef = useRef();
+
+  const handleTimeUpdate = () => {
+    setCurrentTime(videoRef.current.currentTime);
+  };
+
+  const handleMetadataLoaded = () => {
+    setDuration(videoRef.current.duration);
   };
 
   return (
@@ -106,14 +124,31 @@ function Card({
                 </div>
               </div>
               <div className={Styles["video-container"]}>
-                <video
-                  className={Styles["project-video"]}
-                  autoPlay
-                  loop
-                  playsInline
-                >
-                  <source src={videoSrc} type="video/mp4" />
-                </video>
+              <video
+                ref={videoRef}
+                onTimeUpdate={handleTimeUpdate}
+                onLoadedMetadata={handleMetadataLoaded}
+                onLoadedData={() => setLoading(false)} // Set loading state to false when video data is loaded
+                className={Styles["project-video"]}
+                autoPlay
+                loop
+                playsInline
+                type="video/mp4"
+                src={videoSrc}
+              >
+              </video>
+              {loading && (
+                <div className={Styles["loading-overlay"]}>
+                  <CircularProgressbar
+                    value={currentTime}
+                    maxValue={duration}
+                    styles={{
+                      path: { stroke: '#3e98c7' },
+                      trail: { stroke: '#d6d6d6' },
+                    }}
+                  />
+                </div>
+              )}
               </div>
             </div>
           </div>
