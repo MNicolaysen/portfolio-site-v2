@@ -26,6 +26,7 @@
   max-width: 90%;
   max-height: 80%;
   background-color: black;
+  opacity: 0.85;
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -44,6 +45,7 @@
   font-size: 0.875rem;
   line-height: 1.125em;
   margin: 0;
+  opacity: 1;
 }
 
 /* tabs  */
