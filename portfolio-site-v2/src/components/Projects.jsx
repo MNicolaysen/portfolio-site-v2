@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import Card from "./Card";
 import { Link } from 'react-router-dom';
+import './Projects.css'
 import CarouselWrapper from "./CarouselWrapper";
 import memeGenerator from '../components/images/projects/meme-generator.png';
 import restaurantApp from "../components/images/projects/restaurant.png";
@@ -124,7 +125,7 @@ function Projects() {
   ];
 
   return (
-    <div>
+    <div className="projects-container">
       <Link
         to={'/'}
         style={{

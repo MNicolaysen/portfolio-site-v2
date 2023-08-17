@@ -55,7 +55,10 @@ function Card({
             flipped ? Styles.hideTitle : ""
           }`}
         >
-          {title}
+          <div style={{ textTransform: 'uppercase'}}>
+             {title}
+          </div>
+
         </h1>
         {!flipped && (
           <img className={Styles["project-img"]} style={{cursor:'pointer'}} src={imageSrc} alt={alt} />

@@ -11,13 +11,15 @@
 .landing-container h1 {
   z-index: 1;
   font-size: 3.75em;
-  margin: .1em 0;
+  margin: .2em 0;
+  font-weight: lighter;
+  padding: 0;
+  width: 900px;
 }
 
 .first-name, .surname {
   position: absolute;
-  font-family: 'Moirai One', cursive;
-  right: 10px;
+  left: 10px;
 }
 
 .first-name {
@@ -33,19 +35,19 @@
   display: flex;
   justify-content: center;
   font-size: 2.2em;
-  margin: 0.2em 0 0 0.3em;
+  margin: 0 0.4em 0 0.2em;
   cursor: pointer;
   font-style: normal;
+  align-items: center;
 }
 
 .contact-links {
   display: flex;
   flex-direction: column;
-  padding-left: 0;
-  background-color: transparent;
   position: absolute;
-  bottom: 7%;
+  bottom: 0;
   left: 0;
+  padding: 0;
 }
 
 .contact-link-header:hover {
@@ -130,42 +132,7 @@
 
   /* icons  */
   .contact-links {
-    top: -15px;
-  }
-
-  /* corner fold  */
-  .fold::before {
-    border-width: 6.25em 0 0 6.25em;
-  }
-
-  .fold:hover::before {
-    border-width: 13.43em 0 0 13.43em;
-    border-color: #eee transparent;
-  }
-
-  /* portfolio display  */
-  .portfolio-v1 {
-    bottom: -130px;
-    left: -135px;
-    width: 25.3em;
-    height: 25.3em;
-    transition: opacity 0.9s ease-in-out;
-    visibility: hidden;
-  }
-
-  .fold:hover .portfolio-v1 {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  /* corner fold */
-  .corner-fold .fold::before {
-  border-width: 7em 0 0 7em;
-  }
-
-  .corner-fold h3 {
-  bottom: -15px;
-  left: 125px;
-  font-size: 1.2em;
+    flex-direction: row;
+    margin-left: 1em;
   }
 }

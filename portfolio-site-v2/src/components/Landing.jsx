@@ -45,8 +45,8 @@ function Landing() {
         </video>
 
         {/* header  */}
-        <h1 className='first-name'>Morton</h1>
-        <h1 className='surname'>Nicolaysen</h1>
+        <h1 className='first-name'>MORTON</h1>
+        <h1 className='surname'>NICOLAYSEN</h1>
 
         {/* icons  */}
         <ul className="contact-links">
@@ -91,7 +91,7 @@ function Landing() {
                 width:'31px'
               }
             } href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:d3d7fea6-dd4a-4042-a15b-acfdb18129ac" target="_blank" rel="noopener noreferrer">
-              <p className="cv">CV</p>
+              <a className="cv">CV</a>
             </a>
           </li>
         </ul>
@@ -108,14 +108,6 @@ function Landing() {
           </li>
           <li className='nav-link' onClick={handleContactClick}>C O N T A C T</li>
         </ul>
-      </div>
-
-      {/* corner fold  */}
-      <div className='corner-fold'>
-        <div className='fold'>
-          <a className='portfolio-v1' href="https://legendary-crostata-9441e6.netlify.app" target="_blank" rel="noopener noreferrer"></a>
-        </div>
-        <h3>← Checkout my portfolio V1</h3>
       </div>
 
 
