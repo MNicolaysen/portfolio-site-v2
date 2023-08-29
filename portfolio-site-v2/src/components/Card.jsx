@@ -110,16 +110,16 @@ function Card({
                 </div>
               </div>
               <div className={Styles["video-container"]}>
-              <video
-                className={Styles["project-video"]}
-                autoPlay
-                loop
-                playsInline
-                type="video/mp4"
-                src={videoSrc}
-              >
-              </video>
-              <div className={Styles["empty-vid-container"]}></div>
+                <video
+                  className={Styles["project-video"]}
+                  autoPlay
+                  loop
+                  playsInline
+                  type="video/mp4"
+                  src={videoSrc}
+                >
+                </video>
+                <div className={Styles["empty-vid-container"]}></div>
               </div>
             </div>
           </div>
