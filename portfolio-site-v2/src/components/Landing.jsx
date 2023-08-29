@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import landingBackground from '../components/images/landing-background.mp4';
 import About from '../components/About';
 import Contact from '../components/Contact'
 import './Landing.css';
@@ -19,31 +18,10 @@ function Landing() {
     setShowContact(!showContact)
   }
 
-  // autoplay vid as page renders
-  useEffect(() => {
-    const video = document.getElementById('landing-video');
-    video.play().catch(error => {
-      console.error('Autoplay was prevented:', error);
-    });
-  }, []);
-
   return (
     <div>
       <meta name="theme-color" content="transparent"/>
       <div className='landing-container'>
-
-        {/* background vid  */}
-        <video
-          id='landing-video'
-          className="landing-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src={landingBackground} type="video/mp4" />
-        </video>
-
         {/* header  */}
         <h1 className='first-name'>MORTON</h1>
         <h1 className='surname'>NICOLAYSEN</h1>
